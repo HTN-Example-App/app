@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "766496770635",
+    "project_id": "htn-app-93deb",
+    "storage_bucket": "htn-app-93deb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766496770635:android:82816db1c3537c7a08dbce",
+        "android_client_info": {
+          "package_name": "com.htnapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766496770635-6mhca8fjdij0san414cicpfdog5nbvi1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.htnapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "766496770635-mk7m649cmee36l85jgvt3mg1096dfopt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqq-w9L6bqycMC2wGWcRHkItVrfeWvonM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766496770635-mk7m649cmee36l85jgvt3mg1096dfopt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
