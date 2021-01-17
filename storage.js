@@ -5,7 +5,8 @@ import storage from '@react-native-async-storage/async-storage';
 	const data = await storage.getItem('settings');
 
 	const defaults = {
-		isFirstRun: false
+		isFirstRun: 'true',
+		theme: 'system'
 	};
 
 	if (!data || Object.entries(JSON.parse(data)).length === 0) {

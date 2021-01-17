@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "766496770635",
+    "firebase_url": "https://htn-app-93deb-default-rtdb.firebaseio.com",
     "project_id": "htn-app-93deb",
     "storage_bucket": "htn-app-93deb.appspot.com"
   },
@@ -14,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "766496770635-6mhca8fjdij0san414cicpfdog5nbvi1.apps.googleusercontent.com",
+          "client_id": "766496770635-7063rk9oo5i5adomd4f6cd1j3uqti1ss.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.htnapp",
@@ -37,6 +38,13 @@
             {
               "client_id": "766496770635-mk7m649cmee36l85jgvt3mg1096dfopt.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "766496770635-c3q8e2dg7add9qnbssg0454nu6o661a8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.HTNApp"
+              }
             }
           ]
         }

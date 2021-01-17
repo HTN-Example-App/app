@@ -10,6 +10,10 @@ target 'HTNApp' do
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
+  pod 'Permission-LocationAccuracy', :path => "#{permissions_path}/LocationAccuracy"
+
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
