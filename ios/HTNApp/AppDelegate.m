@@ -33,7 +33,7 @@ if ([FIRApp defaultApp] == nil) {
     [FIRApp configure];
 }
 
-[GMSServices provideAPIKey:@"AIzaSyAjFi7v2y9Lk2KJ0Wff0bMdII1UJDaM9TU"];
+[GMSServices provideAPIKey:@"API_KEY"];
 
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);

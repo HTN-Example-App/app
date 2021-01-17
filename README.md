@@ -1,6 +1,6 @@
-# HTN++ Example App
+# App
 
-> App description will be here soon.
+> Easy Access App Source Code
 
 ## Usage
 

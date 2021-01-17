@@ -19,7 +19,6 @@ const Stack = createStackNavigator();
 const getTheme = async scheme => {
 	switch (await storage.getItem('theme')) {
 		case 'system':
-		default:
 			if (scheme === 'dark') {
 				return DarkTheme;
 			}
@@ -29,6 +28,8 @@ const getTheme = async scheme => {
 		case 'dark':
 			return DarkTheme;
 		case 'light':
+			return DefaultTheme;
+		default:
 			return DefaultTheme;
 	}
 };
@@ -67,7 +68,7 @@ const App = () => {
 						headerShown: false
 					}}
 				>
-                    {isFirstRun === 'true' && <Stack.Screen name="Welcome" component={WelcomeScreen} />}
+					{isFirstRun === 'true' && <Stack.Screen name="Welcome" component={WelcomeScreen}/>}
 					<Stack.Screen name="Authentication" component={AuthScreen}/>
 					<Stack.Screen name="Account Creator" component={AccountCreator}/>
 					<Stack.Screen name="Home" component={HomeScreen}/>

@@ -7,7 +7,7 @@ import {
 	Pressable,
 	Image
 } from 'react-native';
-import {Text, IconButton, ActivityIndicator} from 'react-native-paper';
+import {Text, ActivityIndicator} from 'react-native-paper';
 import {useTheme} from '@react-navigation/native';
 import auth from '@react-native-firebase/auth';
 import {AppleButton, appleAuth} from '@invertase/react-native-apple-authentication';
@@ -89,7 +89,7 @@ const App = ({navigation}) => {
 	if (isLoading) {
 		return (
 			<View style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
-				 <ActivityIndicator animating/>
+				<ActivityIndicator animating/>
 			</View>
 		);
 	}
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
 		right: 30
 	},
 	header: {
-    	paddingTop: 70,
+		paddingTop: 70,
 		paddingLeft: 30
 	},
 	heading: {

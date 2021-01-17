@@ -1,8 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {
-	StyleSheet,
-	View
-} from 'react-native';
+import {View} from 'react-native';
 import {Appbar, Searchbar, Text} from 'react-native-paper';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import auth from '@react-native-firebase/auth';
@@ -34,12 +31,12 @@ const App = ({navigation}) => {
 
 	useEffect(() => {
 		(async () => {
-			const response = await fetch(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${region.latitude},${region.longitude}&radius=1500&key=AIzaSyAjFi7v2y9Lk2KJ0Wff0bMdII1UJDaM9TU
+			const response = await fetch(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${region.latitude},${region.longitude}&radius=1500&key=API_KEY
 `);
 			const data = await response.json();
 
 			setPlaces(data.results);
-            	})();
+		})();
 	}, [region]);
 
 	const renderContent = () => (
@@ -63,7 +60,7 @@ const App = ({navigation}) => {
 
 	return (
 		<>
-			 <Appbar.Header style={{backgroundColor: colors.background}}>
+			<Appbar.Header style={{backgroundColor: colors.background}}>
 				<Appbar.Content title="Easy Access" style={{flexDirection: 'row', alignSelf: 'center', justifyContent: 'flex-start'}}/>
 				<Appbar.Action
 					icon="logout" onPress={() => {
@@ -101,13 +98,5 @@ const App = ({navigation}) => {
 		</>
 	);
 };
-
-const styles = StyleSheet.create({
-	container: {
-		height: '100%',
-		width: '100%',
-		alignItems: 'center'
-	}
-});
 
 export default App;
